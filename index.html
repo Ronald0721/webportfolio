@@ -26,7 +26,7 @@
   <nav>
     <div class="nav-bar">
       <a href="#landing" class="logo">Rnld</a>
-      <div>
+      <div class="navigation">
         <div class="nav-items">
           <div class="nav-close-btn"></div>
           <a href="#landing">Home</a>
@@ -34,17 +34,39 @@
           <a href="#projects">Projects</a>
           <a href="#contact">Contact</a>
         </div>
-      </div>
-      <div class='nav-menu-btn burger'>
-          <div class="line1"></div>
-          <div class="line2"></div>
-          <div class="line3"></div>
+        <div class="nav-menu-btn"></div>
+        <!-- Button trigger modal -->
+        <button type="button" class="nav-menu-btn d-md-none" data-toggle="modal" data-target="#exampleModalCenter">
+        </button>
+
+        
       </div>
     </div>
   </nav>
 
     <header id="landing">
         <section class="home" id="landing">
+            <!-- Modal -->
+        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body text-center">
+                <div class="modal-menus">
+                  
+                  <a class="d-block" href="#landing">Home</a>
+                  <a class="d-block" href="#about">About</a>
+                  <a class="d-block" href="#projects">Projects</a>
+                  <a class="d-block" href="#contact">Contact</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
             <div class="home-container column justify-content-center align-content-center">
               <div class="media-icons">
                 <a href="http://linkedin.com/in/ronald-sandagon-abarquez/" target="_blank" rel="noreferrer"><i class="fa-brands fa-linkedin"></i></a>

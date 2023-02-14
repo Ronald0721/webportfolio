@@ -104,14 +104,14 @@ nav {
     left: 0;
     backdrop-filter: blur(20px);
     transition: .6s ease;
-  }
+}
   
-  nav.sticky {
+nav.sticky {
     background: rgba(#255, #255, #255, 0.1);
     box-shadow: 0px 0px 20px rgb(0 0 0 / 10%);
-  }
+}
    
-  .nav-bar {
+.nav-bar {
     position: relative;
     height: calc(4rem + 1rem);
     max-width: 1600px;
@@ -122,41 +122,41 @@ nav {
     margin-right: auto;
     padding: 0 20px;
     transition: 6s ease;
-  }
+}
   
-  nav.sticky .nav-bar {
+nav.sticky .nav-bar {
     height: calc(2.5rem + 1rem);
-  }
+}
   
-  .nav-bar .logo {
+.nav-bar .logo {
     color:  #0e2431;
     font-size: 2em;
     font-weight: 600;
-  }
+}
   
-  .nav-items a{
+.nav-items a{
     color:  #0e2431;
     font-size: 1em;
     font-weight: 500;
-  }
+}
   
-  .nav-items a.active{
+.nav-items a.active{
     color: #2D6BB4;
-  }
+}
   
-  .nav-items a:not(:last-child) {
+.nav-items a:not(:last-child) {
     margin-right: 50px;
-  }
+}
   
-  .nav-items a:hover {
+.nav-items a:hover {
     color: #2D6BB4;
-  }
+}
   
-  .nav-menu-btn {
-    display: none;
-  }
+.nav-menu-btn {
+    display: block;
+}
 
-  .nav-items {
+.nav-items {
     display: flex;
     justify-content: space-around;
     place-items: center;
@@ -190,69 +190,69 @@ nav {
 }
 
 @media screen and (max-width: 1070px) {
-    .navigation{
+    .navigation {
       position: fixed;
       width: 100%;
-      height: 100vh;
       top: 0;
       left: 0;
       display: flex;
       justify-content: center;
       align-items: center;
-      background: var(--transparent-color-01);
       visibility: hidden;
       opacity: 0;
       transition: .3s ease;
     }
+
+    .navigation.active .nav-items{
+        transform: translateY(0);
+    }
   
-    .navigation.active{
+    .navigation{
       visibility: visible;
       opacity: 1;
   }
     .nav-items{
       position: relative;
-      background: var(--modal-bg-color);
+      background: #fff;
       width: 600px;
       max-width: 600px;
-      display: flex;
+      display: none;
       align-items: center;
       flex-direction: column;
       margin: 20px;
       padding: 40px;
       border-radius: 10px;
-      box-shadow: var(--box-shadow);
+      box-shadow: 0px 0px 20px rgb(0 0 0 / 10%);
       transform: translateY(-50px);
       transition: .3s ease;
   }
   
-  
-  .navigation.active .nav-items{
-      transform: translateY(0);
-  }
-  
   .nav-close-btn{
       position: absolute;
-      background: url(../Assets/close-btn.png) no-repeat;
-      filter: var(--color-filter);
+      background: url(./images/close-btn.png) no-repeat;
+      filter: invert(1);
       background-size: 12px;
       background-position: center;
       width: 40px;
       height: 40px;
       top: 0;
       right: 0;
-      margin: 10px;
       cursor: pointer;
   }
   
     .nav-menu-btn {
-      background: url(../Assets/menu-btn.png) no-repeat;
-      filter: var(--color-filter);
-      background-size: 30px;
-      background-position: center;
-      width: 40px;
-      height: 40px;
-      cursor: pointer;
-      display: block;
+        position: absolute;
+        background: url(./images/menu-btn.png) no-repeat;
+        filter: invert(1);
+        background-size: 30px;
+        background-position: center;
+        width: 60px;
+        height: 60px;
+        top: 0;
+        right: 0;
+        margin: 10px;
+        cursor: pointer;
+        border: none;
     }
   
     .nav-items a:not(:last-child) {
@@ -385,7 +385,7 @@ nav {
 @media screen and (max-width: 730px){
     .home-container .home-img{
         position: absolute;
-        width: 100%;
+        width: 200px;
     }
 
     .home .home-container {
