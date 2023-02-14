@@ -24,37 +24,36 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body class="container-fluid">
-    <nav>
-        <div class="nav-container">
-            <div class="logo"><h1>Rnld</h1></div>
-            <ul class="menus ml-auto">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Gallery</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <div class="burger">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-            </div>
+  <nav>
+    <div class="nav-bar">
+      <a href="#home" class="logo">Rnld</a>
+      <div class={isActive ? "navigation active" : "navigation"}>
+        <div class="nav-items">
+          <div class="nav-close-btn"></div>
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#portfolio">Projects</a>
+          <a href="#contact">Contact</a>
         </div>
-    </nav>
+      </div>
+      <div class='nav-menu-btn'></div>
+    </div>
+  </nav>
 
     <header id="home">
         <section class="home" id="home">
-            <div class="home-container d-flex justify-content-center align-content-center">
+            <div class="home-container column d-flex justify-content-center align-content-center">
               <div class="media-icons">
                 <a href="http://linkedin.com/in/ronald-sandagon-abarquez/" target="_blank" rel="noreferrer"><i class="fa-brands fa-linkedin"></i></a>
                 <a href="http://github.com/Ronald0721/" target="_blank" rel="noreferrer"><i class="fa-brands fa-github"></i></a>
                 <a href="https://www.facebook.com/sandagon.ronald.abarquez" target="_blank" rel="noreferrer"><i class="fa-brands fa-facebook"></i></a>
               </div>
-                <div class="info">
+                <div class="info-home col-lg-7">
                     <h2 class="pr-5">Crafting visually amazing and highly functional websites</h2>
                     <h3>Hi, I’m Ronald, a Web Developer</h3>
                     <a href="#contact" class="btn">Contact Me</a>
                 </div>
-                <div className="home-img">
+                <div class="home-img col-lg-5">
                     <img src="./images/Hero img.png" alt="profile-img"/>
                 </div>
               </div>
@@ -64,7 +63,7 @@
 
     <!-- About Me Section -->
     <section id="about" class="about section">
-        <div class="container flex-center">
+        <div class="about-container container flex-center">
           <h1 class='section-title-01'>About Me</h1>
           <h1 class='section-title-02'>About Me</h1>
           <div class="content flex-center">
@@ -97,54 +96,103 @@
         </div>
       </section>
 
+      <section class="tools section text-center">
+        <div class="container flex-center">
+          <h1 class="section-title-01">Tools</h1>
+          <h2 class="section-title-02">Tools</h2>
+          <div class="p-3">
+
+            <!-- Core Tools Section Start -->
+            <div class="mt-5">
+              <h3>Core Tools</h3>
+
+            <div>
+                <div class="d-inline">
+                    <img width="150" src="images/logo-html5.png"/>
+                </div>
+                <div class="d-inline">
+                    <img width="150" src="images/logo-css3.png"/>
+                    <img width="150" src="images/logo-javascript.png"/>
+                </div>
+            </div>
+            </div>
+            <!-- Core Tools Section End -->
+            
+            <!-- Other Tools Section Start -->
+            <div class="mt-5">
+              <h3>Other Tools</h3>
+
+            <div class="d-flex d-md-block p-3">
+                <div class="d-inline">
+                    <img width="150" src="images/logo-mongodb.png"/>
+                    <img width="150" src="images/logo-nodejs.png"/>
+                    <img width="150" src="images/logo-expressjs.png"/>
+                    <img width="150" src="images/logo-react.png"/>
+                    <img width="150" src="images/logo-heroku.png"/>
+                </div>
+                <div class="mt-3 d-inline">
+                    <img width="150" src="images/logo-git.png"/>
+                    <img width="150" src="images/logo-sublime-text-3.png"/>
+                    <img width="150" src="images/logo-postman.png"/>
+                    <img width="150" src="images/logo-gitlab-ci-cd.png"/>
+                </div>
+            </div>
+            <!-- Other Tools Section End -->
+            </div>
+            
+            
+        </div>
+        </div>
+      </section>
+
       <!-- Portfolio Section -->
-      <section id="portfolio" className='portfolio section'>
-        <div className="container flex-center">
-          <h1 className="section-title-01">Portfolio</h1>
-          <h2 className="section-title-02">Portfolio</h2>
-          <div className="content">
-            <div className="portfolio-list">
-              <div className="img-card-container">
-                <div className="img-card">
-                  <div className="overlay"></div>
-                  <div className="info">
-                    <h3>To-Do List</h3>
-                    <span>Manage Your Tasks and Priorities</span>
+      <section id="portfolio" class='portfolio section'>
+        <div class="portfolio-container container flex-center">
+          <h1 class="section-title-01">Projects</h1>
+          <h2 class="section-title-02">Projects</h2>
+          <div class="content">
+            <div class="portfolio-list">
+              <div class="img-card-container">
+                <div class="img-card">
+                  <div class="overlay"></div>
+                  <div class="info">
+                    <h3>Soon</h3>
+                    <span>Soon</span>
                   </div>
-                  <img src={P1a} alt="project-img" />
+                  <img src="images/Soon.png" alt="project-img" />
               </div>
-              <div className="img-card-container">
-                <div className="img-card">
-                  <div className="overlay"></div>
-                  <div className="info">
-                    <h3>Keeper</h3>
-                    <span>Organize Your Notes and Ideas</span>
+              <div class="img-card-container">
+                <div class="img-card">
+                  <div class="overlay"></div>
+                  <div class="info">
+                    <h3>Soon</h3>
+                    <span>Soon</span>
                   </div>
-                  <img src={P2a} alt="project-img" />
+                  <img src="images/Soon.png" alt="project-img" />
               </div>
-              <div className="img-card-container">
-                <div className="img-card">
-                  <div className="overlay"></div>
-                  <div className="info">
-                    <h3>Simon Game</h3>
-                    <span>Challenge Your Memory and Reflexes</span>
+              <div class="img-card-container">
+                <div class="img-card">
+                  <div class="overlay"></div>
+                  <div class="info">
+                    <h3>Soon</h3>
+                    <span>Soon</span>
                   </div>
-                  <img src={P3a} alt="project-img" />
+                  <img src="images/Soon.png" alt="project-img" />
             </div>
           </div>
         </div>
         <!-- Get in touch -->
-        <div className="get-in-touch sub-section">
-          <div className="container">
-            <div className="content flex-center">
-              <div className="contact-card flex-center">
-                <div className="title">
+        <div class="get-in-touch sub-section">
+          <div class="gt-container container">
+            <div class="content flex-center">
+              <div class="contact-card flex-center">
+                <div class="title">
                 <h4>Let's Talk</h4>
                 <h3>About Your</h3>
                 <h2>Next Project</h2>
                 </div>
-                <div className="contact-btn">
-                <a href="#contact" className="btn">Get In Touch <i className="fas fa-paper-plane"></i>
+                <div class="contact-btn">
+                <a href="#contact" class="btn">Get In Touch <i class="fas fa-paper-plane"></i>
                 </a>
                 </div>
               </div>
@@ -152,6 +200,82 @@
           </div>
         </div>
       </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class='contact section'>
+      <div class="container flex-center">
+        <h1 class="section-title-01">Contact Me</h1>
+        <h2 class="section-title-02">Contact Me</h2>
+        <div class="content">
+          <div class="contact-left">
+            <h2>Let's discuss your projects</h2>
+            <ul class='contact-list'>
+              <li>
+                <h3 class="item-title"><i class="fas fa-phone"></i>Viber</h3>
+                <span><a href="viber://contact?number=%2B639057053176" target="_blank" rel="noreferrer">+639057053176</a></span>
+              </li>
+              <li>
+                <h3 class="item-title"><i class="fas fa-envelope"></i>Email</h3>
+                <span><a href="mailto:sandagonronald@gmail.com" target="_blank" rel="noreferrer">sandagonronald@gmail</a></span>
+              </li>
+              <li>
+                <h3 class="item-title"><i class="fa-brands fa-facebook-messenger"></i>Messenger</h3>
+                <span><a href='http://m.me/sandagon.ronald.abarquez' target="_blank" rel="noreferrer">Ronald Abarquez Sandagon</a></span>
+              </li>
+            </ul>
+          </div>
+          <div class="contact-right">
+            <p>I'm always open to discussing product, <br />design work, or partnerships.</p>
+            <form action="" class="contact-form"  ref={form} onSubmit={sendEmail}>
+              <div class="first-row">
+                <input type="text" name="name" placeholder="Your full Name" required/>
+              </div>
+              <div class="second-row">
+                <input type="email" name="email" placeholder="Your Email" required/>
+                <input type="text" name="subject" placeholder="Your Subject" required/>
+              </div>
+              <div class="third-row">
+                <textarea name="message" id="" rows="7" placeholder='Message'></textarea>
+              </div>
+              <button class="btn" type='submit'>Send Message  <i class="fas fa-paper-plane"></i></button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+      <div class="footer-container container-fluid">
+          <div class="about group">
+              <h2><a href='#home'>Ronald</a></h2>
+              <p>Front-End Developer</p>
+              <a href="#about">About Me</a>
+          </div>
+          <div class="hr"></div>
+          <div class="info group">
+              <h3>More</h3>
+              <ul>
+                  <li><a href="#skills">Skills</a></li>
+                  <li><a href="#services">Services</a></li>
+                  <li><a href="#portfolio">Portfolio</a></li>
+                  <li><a href="#contact">Contact</a></li>
+              </ul>
+          </div>
+          <div class="hr"></div>
+          <div class="follow group">
+              <h3>Follow</h3>
+          <ul>
+              <li><a href="https://www.facebook.com/sandagon.ronald.abarquez"  target="_blank" rel="noreferrer"><i class="fab fa-facebook-f"></i></a></li>
+              <li><a href="https://www.instagram.com/as._.ronald/"  target="_blank" rel="noreferrer"><i class="fab fa-instagram"></i></a></li>
+              <li><a href="http:/twitter.com"  target="_blank" rel="noreferrer"><i class="fab fa-twitter"></i></a></li>
+          </ul>
+          </div>
+      </div>
+      <div class="footer-copyright group">
+       <p>&copy; Ronald Sandagon 2023. All rights reserved.</p>
+      </div>
+  </footer>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
