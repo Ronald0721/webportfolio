@@ -79,7 +79,7 @@ a, a:link {
   }
 
   @media screen and (max-width: 730px){
-    /*=======Common styles for all sections=======*/
+    /* Common styles for all sections */
     body {
       margin: 5rem 0 0 0;
     }
@@ -156,29 +156,29 @@ nav {
     display: none;
   }
 
-.menus {
+  .nav-items {
     display: flex;
     justify-content: space-around;
     place-items: center;
     gap: 3rem;
 }
 
-.menus a {
+.nav-items a {
     position: relative;
 }
 
-.menus a::before {
+.nav-items a::before {
     content: "";
     width: 0%;
-    background-color: black;
+    background-color: #3D95DF;
     height: 3px;
     bottom: 0;
     position: absolute;
     transition: .3s;
 }
 
-.menus a:hover:before {
-    width: 100%;
+.nav-items a:hover:before {
+    width: 120%;
 }
 
 .header-container {
@@ -187,65 +187,6 @@ nav {
     width: 100%;
     height: 100vh;
     justify-content: space-around;
-}
-
-.burger {
-    display: none;
-}
-
-.burger div {
-    width: 25px;
-    height: 5px;
-    background-color: #ffffff;
-    margin: 5px;
-    transition: all .3s ease;
-}
-
-.nav-icon-container {
-    width: 100%;
-    display: flex;
-    place-items: center;
-    justify-content: center;
-}
-
-.nav-icon {
-    width: 50px;
-    height: 50px;
-    background: black;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    place-items: flex-end;
-    gap: 10%;
-    padding-right: .6em;
-}
-
-.line-1 {
-    width: 70%;
-    background: #000000;
-    height: 5px;
-}
-
-.line-2 {
-    width: 50%;
-    background: #000000;
-    height: 5px;
-}
-
-.line-3 {
-    width: 30%;
-    background: #000000;
-    height: 5px;
-}
-
-.toggle .line1 {
-    transform: rotate(-45deg) translate(-5px, 6px);
-}
-.toggle .line2 {
-    opacity: 0;
-}
-.toggle .line3 {
-    transform: rotate(45deg) translate(-5px, -6px);
 }
 
 @media screen and (max-width: 1070px) {
@@ -384,7 +325,7 @@ nav {
 .btn {
     background: #2D6BB4;
     color:#fff;
-    font-size: 1.3em;
+    font-size: 1.2rem;
     font-weight: 500;
     display: inline-block;
     margin-top: 15px;
@@ -448,7 +389,7 @@ nav {
     }
 
     .home .home-container {
-        display: grid;
+        display: flex;
     }
        
     .home-container .home-img img {
@@ -457,13 +398,16 @@ nav {
     }
 
     .home .home-container .info-home {
-        font-size: 0.35rem;
+        font-size: 0.4rem;
         line-height: 0;
         display: block;
+        padding: 0;
+        margin: 0;
     }
 
     .home-container .info-home h2, .home-container .info-home h3 {
         line-height: normal;
+        
     }
 
     .media-icons {
