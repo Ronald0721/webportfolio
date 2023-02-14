@@ -385,11 +385,14 @@ nav.sticky .nav-bar {
 @media screen and (max-width: 730px){
     .home-container .home-img{
         position: absolute;
-        width: 200px;
+        top: 25%;
+        left: 1%;
+        width: 300px;
     }
 
     .home .home-container {
         display: flex;
+        flex-direction: column;
     }
        
     .home-container .home-img img {
@@ -405,13 +408,29 @@ nav.sticky .nav-bar {
         margin: 0;
     }
 
-    .home-container .info-home h2, .home-container .info-home h3 {
-        line-height: normal;
-        
+    .info-home {
+        padding: 0;
     }
 
-    .media-icons {
-        margin-bottom: 120%;
+    .home-container .info-home h2, .home-container .info-home h3 {
+        line-height: normal;
+    }
+
+    .home-container .info-home h2 {
+        margin-top: 50%;
+        padding: 0;
+    }
+
+    .home-container .info-home h3 {
+        font-size: 1.1rem;
+    }
+
+    .media-icons, .home-img {
+        position: absolute;
+        display: inline-block;
+        top: 3%;
+        left: 7%;
+        margin: 0;
     }
 }
 
