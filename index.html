@@ -7,8 +7,7 @@
     <title>Rnld</title>
 
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/brands.min.css" integrity="sha512-L+sMmtHht2t5phORf0xXFdTC0rSlML1XcraLTrABli/0MMMylsJi3XA23ReVQkZ7jLkOEIMicWGItyK4CAt2Xw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="https://kit.fontawesome.com/392303535f.css" crossorigin="anonymous">
 
     <!-- G Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,13 +25,13 @@
 <body class="container-fluid">
   <nav>
     <div class="nav-bar">
-      <a href="#home" class="logo">Rnld</a>
-      <div class={isActive ? "navigation active" : "navigation"}>
+      <a href="#landing" class="logo">Rnld</a>
+      <div>
         <div class="nav-items">
           <div class="nav-close-btn"></div>
-          <a href="#home">Home</a>
+          <a href="#landing">Home</a>
           <a href="#about">About</a>
-          <a href="#portfolio">Projects</a>
+          <a href="#projects">Projects</a>
           <a href="#contact">Contact</a>
         </div>
       </div>
@@ -40,8 +39,8 @@
     </div>
   </nav>
 
-    <header id="home">
-        <section class="home" id="home">
+    <header id="landing">
+        <section class="home" id="landing">
             <div class="home-container column d-flex justify-content-center align-content-center">
               <div class="media-icons">
                 <a href="http://linkedin.com/in/ronald-sandagon-abarquez/" target="_blank" rel="noreferrer"><i class="fa-brands fa-linkedin"></i></a>
@@ -96,7 +95,7 @@
         </div>
       </section>
 
-      <section class="tools section text-center">
+      <section id="tools" class="tools section text-center mt-5">
         <div class="container flex-center">
           <h1 class="section-title-01">Tools</h1>
           <h2 class="section-title-02">Tools</h2>
@@ -146,10 +145,10 @@
       </section>
 
       <!-- Portfolio Section -->
-      <section id="portfolio" class='portfolio section'>
+      <section id="projects" class='portfolio section'>
         <div class="container flex-center">
-          <h1 class="section-title-01">Portfolio</h1>
-          <h2 class="section-title-02">Portfolio</h2>
+          <h1 class="section-title-01">Projects</h1>
+          <h2 class="section-title-02">Projects</h2>
           <div class="content">
             <div class="portfolio-list">
               <div class="img-card-container">
@@ -253,7 +252,7 @@
     <footer>
       <div class="footer-container container-fluid">
           <div class="about group">
-              <h2><a href='#home'>Ronald</a></h2>
+              <h2><a href='#landing'>Ronald</a></h2>
               <p>Front-End Developer</p>
               <a href="#about">About Me</a>
           </div>
@@ -261,9 +260,8 @@
           <div class="info group">
               <h3>More</h3>
               <ul>
-                  <li><a href="#skills">Skills</a></li>
-                  <li><a href="#services">Services</a></li>
-                  <li><a href="#portfolio">Portfolio</a></li>
+                  <li><a href="#tools">Tools</a></li>
+                  <li><a href="#projects">Projects</a></li>
                   <li><a href="#contact">Contact</a></li>
               </ul>
           </div>
@@ -281,6 +279,9 @@
        <p>&copy; Ronald Sandagon 2023. All rights reserved.</p>
       </div>
   </footer>
+
+    <!-- Font Awesome JS -->
+    <script src="https://kit.fontawesome.com/392303535f.js" crossorigin="anonymous"></script>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

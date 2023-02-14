@@ -3,6 +3,7 @@
     padding: 0;
     font-family: 'Poppins', sans-serif !important;
     list-style-type: none;
+    box-sizing: border-box;
 }
 
 body {
@@ -109,7 +110,7 @@ nav {
   
   .nav-bar .logo {
     color:  #0e2431;
-    font-size: 1.3rem;
+    font-size: 2em;
     font-weight: 600;
   }
   
@@ -777,4 +778,8 @@ footer a {
     font-size: 1em;
     font-weight: 300;
     margin-top: 50px;
+}
+
+a:hover {
+    color: white
 }
