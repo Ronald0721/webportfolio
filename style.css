@@ -375,6 +375,10 @@ nav.sticky .nav-bar {
     background: #3D95DF
 }
 
+.modal-body a:hover {
+    color: #3D95DF;
+}
+
 
 @media screen and (max-width: 1070px){
     .home .home-container .info-home {
