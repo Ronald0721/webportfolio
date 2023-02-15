@@ -436,6 +436,11 @@ nav.sticky .nav-bar {
         left: 7%;
         margin: 0;
     }
+
+    .to-top {
+        right: 8%;
+        bottom: 8%;
+    }
 }
 
 /* About Me Section */
